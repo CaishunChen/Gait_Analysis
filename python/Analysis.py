@@ -102,9 +102,9 @@ class Analysis(object):
         self.pitch_risezero_index,self.pitch_risezero = dp.findzeropoints('rise')
         self.pitch_fallzero_index,self.pitch_fallzero = dp.findzeropoints('fall')
 
-        print(len(self.pitch_peak_index))
-        print(len(self.pitch_valley_index))
-        print(len(self.pitch_nearzeros_index))
+        # print(len(self.pitch_peak_index))
+        # print(len(self.pitch_valley_index))
+        # print(len(self.pitch_nearzeros_index))
     
     def marktimeline(self):
         timeline = ['' for i in range(len(self.pitch))]
@@ -176,11 +176,11 @@ class Analysis(object):
 
 
     def countstep(self):
-        t = 0.0
-        for each in self.route:
-            t += (each.end_valley-each.start_valley)
-        t = t/len(self.timeline)
-        print('step is',len(self.route)/t)
+        # t = 0.0
+        # for each in self.route:
+        #     t += (each.end_valley-each.start_valley)
+        # t = t/len(self.timeline)
+        print('step is',len(self.route))
         printable_route = []
         for each in self.route:
             printable_route.extend(each.tolist())
