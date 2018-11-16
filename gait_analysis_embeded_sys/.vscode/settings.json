@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "implement.h": "c",
+        "dataprocess.h": "c",
+        "config.h": "c"
+    }
+}
